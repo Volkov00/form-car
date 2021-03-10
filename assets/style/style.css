@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: black;
+  font-family: sans-serif;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+}
+.title::after,
+.title::before {
+  content: "";
+  position: absolute;
+  width: 32%;
+  height: 1px;
+  background-color: black;
+}
+.title::after {
+  right: 0;
+  top: 50%;
+}
+.title::before {
+  left: 0;
+  top: 50%;
+}
+.sub-title {
+  padding: 20px 0 15px;
+}
+.card-form {
+  background-color: rgba(99, 95, 95, 0.274);
+  display: flex;
+  width: 430px;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.Name {
+  display: flex;
+  justify-content: space-between;
+}
+.Fname,
+.Lname {
+  width: 45%;
+}
+.check-container {
+  margin: 15px 0;
+  text-align: left;
+}
+.submit {
+  background-color: green;
+  color: white;
+  padding: 10px 0;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+.inp-pad {
+  padding: 8px 0 8px 5px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+span {
+  color: green;
+}
