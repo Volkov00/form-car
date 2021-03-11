@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 body {
   color: black;
@@ -19,15 +20,15 @@ body {
   background-color: black;
 }
 .title::after {
-  right: 0;
-  top: 50%;
-}
-.title::before {
   left: 0;
   top: 50%;
 }
+.title::before {
+  right: 0;
+  top: 50%;
+}
 .sub-title {
-  padding: 20px 0 15px;
+  padding-top: 20px;
 }
 .card-form {
   background-color: rgba(99, 95, 95, 0.274);
@@ -62,6 +63,6 @@ body {
   border-radius: 5px;
   border: 1px solid grey;
 }
-span {
+.link {
   color: green;
 }

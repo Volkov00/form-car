@@ -10,21 +10,21 @@
 </head>
 <body>
 <article class="wrapper">
-  <form class="card-form" action="#" method="POST">
+  <form class="card-form" method="#">
       <h1 class="title">Register</h1>
       <p class="sub-title">Create your account. It`s free and only takes a minute</p>
     <div class="Name">
-      <input type="text" class="Fname inp-pad" placeholder="First Name">
-      <input type="text" class="Lname inp-pad" placeholder="Last Name">
+      <input name="fnmae" type="text" class="Fname inp-pad" placeholder="First Name">
+      <input name="sname" type="text" class="Lname inp-pad" placeholder="Last Name">
     </div>
-    <input type="email" class="email inp-pad" placeholder="Emain">
-    <input type="password" class="password inp-pad" placeholder="Password">
-    <input type="password" class="confirm-pass inp-pad" placeholder="Confirm Password">
+    <input name="email" type="email" class="email inp-pad" placeholder="Emain">
+    <input name="password" type="password" class="password inp-pad" placeholder="Password">
+    <input name="confpassword" type="password" class="confirm-pass inp-pad" placeholder="Confirm Password">
     <label class="check-container">
-    <input class="check" type="checkbox"> 
-    I accept the <span>Terms of Use</span> & <span>Privacy Police</span>
+    <input  name="doYouAgree" class="check" type="checkbox"> 
+    I accept the <a class="link" href="#">Terms of Use</a> & <a href="#" class="link">Privacy Police</a>
     </label>
-    <button class="submit" type="submit"> Register Now</button>
+    <button class="submit" type="submit">Register Now</button>
   </form>
 </article>
 </body>
