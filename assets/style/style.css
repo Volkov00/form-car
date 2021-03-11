@@ -1,3 +1,6 @@
+:root {
+  --color: green;
+}
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -6,6 +9,7 @@ body {
   color: black;
   font-family: sans-serif;
 }
+
 .title {
   font-size: 30px;
   font-weight: bold;
@@ -35,29 +39,36 @@ body {
   display: flex;
   width: 430px;
   flex-direction: column;
+  margin: 0 auto;
   text-align: center;
   padding: 20px;
 }
-.Name {
+.name {
   display: flex;
   justify-content: space-between;
 }
-.Fname,
-.Lname {
+.nname,
+.fname {
   width: 45%;
 }
 .check-container {
   margin: 20px 0;
-  text-align: left;
+  align-self: flex-start;
 }
 .submit {
-  background-color: green;
   color: white;
   padding: 10px 0;
-  border: 1px solid green;
-  box-shadow: 0px 0px 9px 2px #080a05;
   border-radius: 5px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  transition: all 0.5s;
 }
+.submit:hover {
+  top: 2px;
+  box-shadow: 0 3px 0px #3c354a;
+  background-color: var(--color);
+}
+
 .inp-pad {
   padding: 8px 0 8px 5px;
   margin-top: 15px;
@@ -65,5 +76,10 @@ body {
   border: 1px solid grey;
 }
 .link {
-  color: green;
+  color: var(--color);
+}
+@media screen and (max-width: 430px) {
+  .card-form {
+    width: 320px;
+  }
 }
