@@ -47,7 +47,7 @@ body {
   width: 45%;
 }
 .check-container {
-  margin: 15px 0;
+  margin: 20px 0;
   text-align: left;
 }
 .submit {
@@ -55,6 +55,7 @@ body {
   color: white;
   padding: 10px 0;
   border: 1px solid green;
+  box-shadow: 0px 0px 9px 2px #080a05;
   border-radius: 5px;
 }
 .inp-pad {
