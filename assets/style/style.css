@@ -47,8 +47,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.nname,
-.fname {
+.fname,
+.lname {
   width: 45%;
 }
 .check-container {
@@ -79,7 +79,10 @@ body {
   color: var(--color);
 }
 @media screen and (max-width: 430px) {
-  .card-form {
-    width: 320px;
+  .name {
+    display: block;
+  }
+  .lname, .fname{
+    width: 100%;
   }
 }
